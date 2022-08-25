@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+let arr=[
+
+{company:"amazon",price:1230},
+{company:"microsoft",price:3468},
+{company:"apple",price:4590},
+{company:"tesla",price:5780}
+
+
+
+]
+
+
+// FOR EACH//
+// For each returns only undefine//
+arr.forEach((company,index)=>{
+
+console.log(company,index);
+
+
+})
+
+// You can also write like that//
+arr.forEach((company,index)=>    (console.log(company,index)));
+
+
+
+
+
+//  Fillter//
+
+
+let x= arr.filter(function (pri){
+    if(pri.price>3000){
+        return true;
+    }
+})
+    console.log(x);
+    let y= arr.filter(pri=> pri.price>3000);
+    console.log(y);
+
+
+
+    //  MAP//
+
+    // map is same as forEach but map retuns new arry//
+
+
+
+
+    // SORT//
+
+    let sorted= arr.sort(function(c1,c2){
+
+        if(c1.price<c2.price){ // desending order//
+            return 1;
+        }else{
+            return -1;
+        }
+    })
+    console.log(sorted);
+
+    let sortd=arr.sort((c1,c2)=>  (c1.price>c2.price ?1 :-1));// asending//
+
+    console.log(sortd);
+
+
+
+    // REDUCE//
+
+    let sum=arr.reduce( function(first,pri){
+
+        return first+pri.price;
+    },0);
+    console.log(sum);
+
+
+
+    let su=arr.reduce((first,pri)=>first+pri.price,0);
+
+
+
+console.log(su);
+</script>
