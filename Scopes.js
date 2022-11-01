@@ -1,3 +1,17 @@
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 // WHAT IS SCOPES //
 
 //Scope. An important idea in programming is scope. Scope defines where 
@@ -35,6 +49,35 @@
 //the global scope is generally the web page inside which all the code is 
 //being executed.
 //Global variables can be accessed and modified anywhere in the program
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

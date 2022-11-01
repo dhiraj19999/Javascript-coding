@@ -221,3 +221,56 @@
 //You'll see all the listeners. 
 //If you click on them they'll open in the Sources tab 
 //and you should see a preventDefault() call.
+
+
+
+/*       
+
+what is promises?
+
+=>Promises are a way to implement asynchronous programming in JavaScript
+Why promises are used in JavaScript?
+Promises are used to handle asynchronous operations in JavaScript. 
+They are easy to manage when dealing with multiple asynchronous operations
+ where callbacks can create callback hell leading to unmanageable code.
+
+
+
+
+ Does .then create a new promise?
+Yes, then always returns a new promise for the result of the respective callback. 
+Iff that callback returns a promise that one will be awaited as well, but if the 
+callback returns a plain value (or even undefined ) then the promise will simply 
+fulfill with that.
+
+
+
+then : when a promise is successful, you can then use the resolved data. 
+catch : when a promise fails, you catch the error, and do something with the error 
+information. 
+finally : when a promise settles (fails or passes), you can finally do something.
+
+
+
+
+
+
+
+
+
+
+
+
+What is catch in promise?
+catch() The catch() method returns a Promise and deals with rejected cases only. 
+It behaves the same as calling Promise.
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,91 @@
+
+
+
+<script>
+
+
+
+/*
+
+what is clousers?
+
+A closure is the combination of a function bundled together (enclosed) with references
+ to its surrounding state (the lexical environment). In other words, a closure gives you 
+ access to an outer function's scope from an inner function.
+
+
+206,600+162000+130000+100000+50000+60000
+
+
+
+
+ What is meant by lexical scope?
+Lexical scope means that in a nested group of functions, the inner 
+functions have access to the variables and other resources of their 
+parent scope. This means that the child's functions are lexically 
+bound to the execution context of their parents. Lexical scope is sometimes also referred 
+to as static scope.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var sum= function(a){
+        console.log('hello',a)
+      let c=4;
+        return function(b){
+            return(a+b+c)
+        }
+    }
+
+
+   let store= sum(6);
+
+   console.log(store(6))
+
+
+
+   var add=function(a,b,c){
+
+
+return{
+    getSumtwo:function(){
+        return a+b;
+    },
+    getSumthree:function(d){
+        return  a+b+c+d;
+    }
+}
+
+   }
+
+   let sto= add(4,5,6);
+
+   console.log(sto.getSumthree(1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

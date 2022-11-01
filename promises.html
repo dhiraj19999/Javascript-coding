@@ -1,0 +1,183 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="con">
+    
+  </div>
+</body>
+</html>
+
+<script>
+
+
+
+    // fetch data using promise//
+
+    function getdata(){
+
+let url='https://reqres.in/api/users?page=2';
+fetch(url).then((response)=>{
+    return response.json();
+}).then((data)=>{
+  console.log(data.data)
+  if(data!=undefined){
+    asd(data.data)
+  }
+ 
+})
+
+
+}
+
+getdata();
+
+
+
+
+function asd(data){
+data.forEach((el)=>{
+let box =document.createElement('h1')
+box.innerText=el.first_name
+
+
+document.querySelector('#con').append(box)
+})
+}
+
+
+
+
+// post request
+
+function postData(){
+    url = "http://dummy.restapiexample.com/api/v1/create";
+    data = '{"name":"harglry347485945","salary":"123","age":"23"}'
+    params = {
+        method:'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data   // if data is not in string then we have to use stringify
+    }
+    fetch(url, params).then(response=> response.json())
+    .then(data => ok(data.data.age)
+    )
+}
+
+postData()
+
+function ok(data){
+  console.log('data is',data)
+}
+
+
+
+/*  
+
+
+
+
+
+let students=[
+
+    {name:"Dhiraj", subject:"Javascript"},
+    {name:"Shreya", subject:"Machine-Learning"}
+    
+    ]
+
+
+    function enrollstudents(student){
+
+        return new Promise((reslove,reject)=>{
+
+      setTimeout(()=>{
+        students.push(student);
+
+        const error=false
+        if(!error){
+            reslove()
+        }else{
+            reject()
+        }
+
+      },1000)
+        })
+
+
+
+    }
+
+
+    function getstudent(){
+
+        setTimeout(function(){   // SETtimeout is also callback function because it is in anothr function
+    
+       let str=""
+       students.forEach(function(student){
+        str+= student.name;
+       
+       })
+      //console.log("student fetched")
+      // return str;
+    },1000)
+    
+    }
+    
+
+
+
+    let newstudent={name:"Suraj", subject:"JAVA"};
+
+    enrollstudents(newstudent).then(getstudent).catch(()=>{
+
+        console.log('error occured')
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
