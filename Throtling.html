@@ -1,0 +1,72 @@
+/
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="con">
+    <input   id="'search" onchange="beChange()"/>
+    <button  id="myid" onclick="newFun()">Search</button>
+  </div>
+</body>
+</html>
+
+<script>
+
+const throtle=(fun,delay)=>{
+
+    return function(){
+        document.getElementById("myid").disabled=true
+       setTimeout(()=>{
+        fun()
+       },5000)
+    }
+}
+
+const newFun=throtle(()=>{
+document.getElementById("myid").disabled=false
+console.log("hello user")
+
+},5000)
+
+
+
+
+
+
+//  WHAT IS THROTLING //
+
+
+/*    
+
+ throttling is the process of limiting the number of API requests a user can make in a certain period
+
+ Throttling is used to call a function after every millisecond or a particular interval of time only
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
