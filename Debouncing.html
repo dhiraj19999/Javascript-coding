@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="con">
-    <input   id="'search" onchange="beChange()"/>
+    <input   id="'search" onchange="Betterfun()"/>
     <button  id="myid" onclick="newFun()">Search</button>
   </div>
 </body>
@@ -40,8 +40,32 @@ frequently, by delaying the execution of the function until a specified time to 
 
 */
 
+function getData(){
+
+    console.log("hello")
+}
 
 
+function myDebunce(call,del){
+let timer;
+
+return function (){
+    if(timer) clearTimeout(timer)  // if there is previous time then clear time 
+
+    setTimeout(()=>{
+call()
+    },d)
+}
+
+}
+
+
+
+
+const BetterFun=()=>{
+
+    myDebunce(getData,1000)
+};
 
 
 
