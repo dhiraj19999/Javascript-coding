@@ -4,7 +4,7 @@
 
 
 
-
+/*
 
 
 
@@ -63,20 +63,94 @@
 /*   
 
 
+What is a promise in javascript ?
 
-. What are Promises?
-Promises are objects which are used to perform asynchronous operations. They are just like placeholders to 
-store a future value that will be returned after some time. They contain two properties: PromiseState 
-and PromiseResult.
+ promise is an object that may produce a single value some time in the future: either a resolved 
+ value, or 
+ a reason that it’s not resolved.
+Here also a Promise can have one of three states
+fulfilled
+rejected
+pending
 
- 2. Importance of Promises:
-a) Promises can help us to write trust worthy code.
-b) Promises are used to solve the problems of callbacks like inversion of control and callback hell.
-c) They give us the result prompt in three states: 1) Pending 2) Fulfilled 3) Rejected
-d) We can attach function to promise object and retrieve its value unlike callbacks no need to pass the 
-function.
-e) Nesting can be done in Promises and with the help of that we can return the values in each individual 
-chain.
+
+
+
+Promises are generally used for easier handling of asynchronous operations.
+If the asynchronous operations are successful then the expected result is returned by calling 
+the resolve function by the creator of the promise.
+ Similarly if there was some unexpected error the reasons is passed on by calling the reject function.
+
+Note- every promise has a PromiseState and PromiseResult.
+
+When we create a promise it initializes in its pending state
+
+We need to find what is the result of the promised once the executor runs.
+In order to find, we have  then and catch.
+The then function is attached to promise which executes when the promise is resolved. 
+It sends the value sent through resolve method as an argument.
+
+The catch function is attached to promise which executes when the promise is rejected. 
+It takes the error sent through reject method as an argument.
+
+
+Promise using async and await
+
+The word “async” before a function means one simple thing: a function always returns a promise. 
+Other values are wrapped in a resolved promise automatically.
+The keyword await makes JavaScript wait until that promise settles and returns its result.
+
+
+
+
+
+
+What is a fetch?
+Fetch is a promise based Javascript API for making asynchronous HTTP requests. It is a clean, simple, 
+powerful and a flexible API to get/send data from/to a server.
+
+Note- The Response returned by the fetch() method contains the information about 
+
+the request and the response of the network request including headers, status code, and status message
+
+To get the data, we need to attach a then() method to the fetch() method, because fetch methods are 
+asynchronous and only returns a Promise if the request is successful or unsuccessful.
+
+Inside the then() method we will provide a callback function to process the response or the blog data
+ coming from the server.
+
+
+
+
+ When we get the response from the API endpoint we are getting something called a Response object
+  which is of no use to us because we won't be able to work with that.
+
+So We need to convert the Response object into something we can work with, like JSON or a text.
+
+To convert into JSON, there is a method called json() available in the response object.
+
+
+
+we can use the catch() method of the promise to intercept any error that is thrown during the 
+execution of the request. 
+However, no error will be thrown if the request hits the server and comes back, regardless of 
+what response was returned by the server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,7 +164,50 @@ chain.
 
 
 
+function getData() {
+  //nature of data?
 
+  return true;
+}
+
+let myPromise = new Promise(function (resolve, reject) {
+  let data = false; //initally we dont have data
+
+  //we are waiting for data
+
+  setTimeout(function () {
+    data = getData();
+
+    if (data) {
+      resolve('sweets'); //success value
+    } else {
+      reject('chappal'); //reject value
+    }
+  }, 3000);
+});
+
+//if you want to handle success value
+
+// myPromise.then(function (res) {
+//   console.log('res:', res);
+
+//   img.src = 'https://media0.giphy.com/media/Q81NcsY6YxK7jxnr4v/200w.webp?cid=ecf05e47du9rfrb5n1wqylpwka83yq4zksqob66dao6h9zsx&rid=200w.webp&ct=g';
+// });
+
+// //if you want to handle reject/error value
+
+// myPromise.catch(function (err) {
+//   console.log('err:', err);
+// });
+
+// myPromise.finally(function () {
+//   console.log('ran');
+// });
+
+//1st param to promise - callback function
+
+//resolve - success
+//reject - failure
 
 
 
