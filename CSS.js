@@ -91,14 +91,136 @@ Flexbox is a one-dimensional layout system that we can use to create a row or a 
 
 
 
-I should be hired for this role because of my relevant skills and passion for the industry. . My positive attitude, work ethics, and long-term goals align with the job requirements, making me a committed and valuable asset to the company,
+What does justify-content, justifyItems, justifySelf mean?
+SVG stands for Scalable Vector Graphics. SVG is used to define vector-based graphics for the Web.
+SVG is a vector graphic format that can be scaled to any size without losing quality
+Every element and every attribute in SVG files can be animated
 
-I also have all those skills which your organization looking for 
+Advantages of using SVG over other image formats (like JPEG and GIF) are:
 
-I also completed my full-stack-web-developement course fromMasai school which is collbrated with
+SVG images can be created and edited with any text editor
+SVG images can be searched, indexed, scripted, and compressed
+SVG images are scalable
+SVG images can be printed with high quality at any resolution
+SVG images are zoomable
+SVG graphics do NOT lose any quality if they are zoomed or resized
+SVG is an open standard
+SVG files are pure XML
 
-National skills developement corporation 
+
+
+what are animation and keyframe IN CSS
+A keyframe, also written as “key frame,” is something that defines the starting and/or ending point of any 
+smooth transition.
+Keyframes indicate the start and end of the animation, as well as any intermediate steps between the start 
+and end
+An animation lets an element gradually change from one style to another.
 
 
 
+
+
+HTML Options
+1
+​
+2
+<!DOCTYPE html>
+3
+<html lang="en">
+4
+<head>
+5
+  <meta charset="UTF-8">
+6
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+7
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+8
+  <title>Document</title>
+9
+</head>
+10
+<body>
+11
+  <div class="box">
+12
+   
+13
+  </div>
+14
+</body>
+15
+</html>
+
+
+body{
+padding: 50px;
+}
+.box{
+background-color: red;
+width: 200px;
+height: 200px;
+position: relative;
+display: inline-block;
+animation-name: myframes;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+@keyframes myframes{
+  from{
+height: 200px;
+  }
+  to{
+height: 500px;
+  }
+  
+  }
+
+
+
+What is the difference between min-width and max-width in media queries?
+
+The min-width and max-width are media features
+The min-width specifies the minimum screen width of a specific device, meanwhile, 
+The max-width media feature states the maximum screen width of a specific device.
+
+
+
+
+
+What is media query?
+Media queries is a feature of CSS 3
+which allow you to create different layouts depending on the size of the viewport,
+its useful to make website responsive.
+
+
+what is grid?
+
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
+making it easier to design web pages without having to use floats and positioning.
+Grid was designed for two-dimensional layout - rows, and columns
+
+
+
+difference bet grid and flex?
+
+CSS Grid Layout, is a two-dimensional grid-based layout system with rows and columns, 
+The CSS Flexbox offers a one-dimensional layout
+Flexbox can work on either row or columns at a time, but Grids can work on both
+You can build complex as well responsive design with grid. This is why it is called ‘layout first’.
+While Flexbox excels in laying out items along a single axis,
+ Grid is better for layouts with both horizontal and vertical axes
+ the content inside the box does not stretch automatically according to the content in grid.
+
+ in the flex item, the box stretches as far as the content goes. 
+ You should consider using grid layout when: 
+
+You have a complex design to work with and want maintainable web pages
+You want to add gaps over the block elements
+You should consider using flexbox when:
+
+You have a small design to work with a few rows and columns
+You need to align the element
+You don’t know how your content will look on the page, and you want everything to fit in.
 */
