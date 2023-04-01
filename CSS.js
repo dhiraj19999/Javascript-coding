@@ -90,8 +90,7 @@ Flexbox is a one-dimensional layout system that we can use to create a row or a 
 
 
 
-
-What does justify-content, justifyItems, justifySelf mean?
+what is svg?
 SVG stands for Scalable Vector Graphics. SVG is used to define vector-based graphics for the Web.
 SVG is a vector graphic format that can be scaled to any size without losing quality
 Every element and every attribute in SVG files can be animated
@@ -223,4 +222,34 @@ You should consider using flexbox when:
 You have a small design to work with a few rows and columns
 You need to align the element
 You don’t know how your content will look on the page, and you want everything to fit in.
+
+
+
+
+
+
+What is specificity?
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to 
+an element.
+If there are two or more CSS rules that point to the same element, the selector with the highest 
+specificity value will "win", and its style declaration will be applied to that HTML element.
+
+
+
+inline style =1000  S
+id style = 100      I
+class = 10          C
+
+tag=1               T
+
+universal==0        U
+
+
+
+
+
+
+
+
 */

@@ -4,7 +4,53 @@
 
 
 
+/*
 
+
+
+Scope
+
+// let name = 'pablo pandey'//global scope
+
+// function pabloParked() {
+
+// let name = 'pablo pandey' //local scope // }
+
+//var vs let vs const
+
+// if (x > 10) {
+
+// const name = 'pablo pandey' //block scope
+
+// }
+
+//memory leakage
+
+// for (var i = 0; i < 5; i++) {} //fix this
+
+// console.log('i:', i);
+
+//hoisting happens for all variables. ( var ,let ,const )
+
+// Creation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 
 
