@@ -19,7 +19,7 @@ let userDetail={
     designation:"software develper",
     printDetails:function (){
 
-        console.log(this) // here this points towards userDetail
+        console.log(this.name) // here this points towards userDetail
     }
 }
 
