@@ -44,7 +44,7 @@ Reducers are functions that take the current state and an action as arguments, a
 In other words, (state, action) => newState
 
 
-
+//
 
 
 What is pure function?
@@ -124,7 +124,113 @@ the dispatch function calls our reducer and passes  the current state and the ac
 
 
 
+What are the properties of a store?
+A store is an immutable object tree in Redux. A store is a state container which holds
+ the application’s state. Redux can have only a single store in your application. Whenever a store is 
+ created in Redux, you need to specify the reducer.
 
+ A store has three important methods as given below −
+
+getState
+It helps you retrieve the current state of your Redux store.
+
+The syntax for getState is as follows −
+
+store.getState()
+dispatch
+It allows you to dispatch an action to change a state in your application.
+
+The syntax for dispatch is as follows −
+
+store.dispatch({type:'ITEMS_REQUEST'})
+subscribe
+It helps you register a callback that Redux store will call when an action has been dispatched. 
+As soon as the Redux state has been updated, the view will re-render automatically.
+
+The syntax for dispatch is as follows −
+
+store.subscribe(()=>{ console.log(store.getState());})
+
+
+
+
+where do dispatchers come from redux?
+dispatcher is comes from store object it is a just method of store object
+
+
+
+
+
+
+
+
+Explain redux to a 5 year old?
+
+
+Consider someone who has given you a task to get some money out of a bank. The intention ( action ) 
+you have in your mind is to withdraw money from the bank. In JavaScript, we can represent it as 
+WITHDRAW_MONEY. The first step when you enter the bank is to talk to a cashier and ask them to get your 
+money out of the safe. You never just go to a bank and just went straight to the safe, get your money, and 
+left. 
+
+Redux Store ( Bank )
+The money bank kept is in the vault. The analogy of money is related to the state of the application.
+ You can add more money or get some money out of the bank, similarly, the state can be updated with a new 
+ value or you can reduce the value inside of a state.
+
+money = state
+
+Now consider the whole bank, it has the cashiers, computers, and all other stuff to make it operational.
+ For the state to work properly, we have something called the store, which is like a bank in our case.
+
+bank = store
+
+The store holds the state and keeps it safe.
+
+Redux principle #1:
+Have a single source of truth: The state of your whole application is stored in an object tree within a 
+single Redux store.
+
+In simple language, the application state is stored in a single object managed by the Redux store.
+
+Actions
+Action in the real world can be defined as a process of doing something. So in order to update anything in
+ your state, we need to act on something. In our bank example, we need to act by talking to a cashier and ask
+  them to release our money.
+
+Redux principle #2
+state is read only:
+
+The only way to change the state is to emit an action, an object-describing what happened.
+
+In Redux, we can define our action by an object.
+
+the below is an action object ( simply called action):
+
+{
+   type : "WITHDRAW_MONEY",
+   amount : "1000"
+}
+The action object always has a type field that describes the action you want to perform. In our case, it is
+ WITHDRAW_MONEY.
+
+And always remember the following line as well:
+
+Whenever you need to change or update the state of your Redux application, you need to dispatch an action.
+
+Reducer ( cashier ):
+As we discussed that there is no possible way of getting money directly from the bank and we have to talk to
+ the cashier to get our money. In our case, the cashier is the reducer. It will go to the vault and get the
+  money. The whole process is called dispatching an action.
+
+Reducer ( cashier ) has the knowledge of how to update the state ( get the money ) and ensure states get
+ updated ( you get the money ). Reducers will always return to the new state.
+
+Redux principle #3
+To specify how the state tree is transformed, you write pure reducers.
+
+To understand that, to update the state of your application (like you do with setState updater function in
+     React) your actions must always be sent off (dispatched) to the reducers to get your new state.
 
 
 
