@@ -248,6 +248,28 @@ universal==0        U
 
 
 
+What does justify-content, justifyItems, justifySelf mean?
+What do AlignItems, AlignContent, and AlignSelf mean?
+
+align means vertically and justify means horizontally
+justify-items - Aligns the content inside a grid item along the row axis. justify-content - This property 
+aligns the grid along the row axis. justify-self - Aligns the content inside a grid item along the row axis.
+
+justify self override justify-items on individual items.
+The align-items property defines the default behavior for how items are laid out along the cross axis
+
+
+
+
+
+
+
+
+
+
+How do you build an infinite scrolling page?
+https://www.educative.io/answers/how-to-implement-infinite-scrolling-in-javascript
+
 
 
 
