@@ -39,11 +39,11 @@ person prototype or not.
 
 
 
-
-// let cat = {
-//   type: 'cat',
+//let cat = {
+// type: 'cat',
 //   legs: 16,
-//   tail: true,
+//   tail:
+//    true,
 // };
 
 

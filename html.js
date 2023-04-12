@@ -120,4 +120,219 @@ There are three supported video formats in HTML: MP4, WebM, and OGG.
 </video>
 
 
+
+
+How do you know if a user is offline or not? What API does the browser provide for that?
+
+We can detect if the user is online or offline by using the online property on the navigator 
+object which will return true if the user is connected to the internet, otherwise it returns false .
+
+
+o check if you are online, query window.navigator.onLine, as in the following example:
+
+if (navigator.onLine) {
+  console.log("online");
+} else {
+  console.log("offline");
+}
+
+
+
+
+
+
+
+How do you use Geo Location API?
+
+The Geolocation API allows the user to provide their location to web applications if they so desire.
+ For privacy reasons, the user is asked for permission to report location information.
+
+The Geolocation API is accessed via a call to navigator.geolocation; this will cause the user's browser
+ to ask them for permission to access their location data. If they accept, then the browser will use the 
+ best available functionality on the device to access this information (for example, GPS).
+
+ <button id="find-me">Show my location</button><br />
+<p id="status"></p>
+<a id="map-link" target="_blank"></a>
+
+
+function geoFindMe() {
+  const status = document.querySelector("#status");
+  const mapLink = document.querySelector("#map-link");
+
+  mapLink.href = "";
+  mapLink.textContent = "";
+
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = "";
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+  }
+
+  function error() {
+    status.textContent = "Unable to retrieve your location";
+  }
+
+  if (!navigator.geolocation) {
+    status.textContent = "Geolocation is not supported by your browser";
+  } else {
+    status.textContent = "Locating…";
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+
+document.querySelector("#find-me").addEventListener("click", geoFindMe);
+
+
+
+
+
+
+
+
+
+
+
+What do the following mean in html 
+<section>
+<article>
+<footer>
+<nav>
+<aside>
+
+
+<section>:The <section> tag defines a section in a document.
+Section tag defines the section of documents such as chapters, headers, footers or any other sections. 
+The section tag divides the content into section and subsections. The section tag is used when requirements
+ of two headers or footers or any other section of documents needed. Section tag grouped the generic block 
+ of related contents. The main advantage of the section tag is, it is a semantic element, which describes 
+ its meaning to both browser and developer.
+
+ <article>: An article should make sense on its own and it should be possible to distribute it independently
+  from the rest of the site.
+
+Potential sources for the <article> element:
+
+Forum post
+Blog post
+News story
+
+
+
+<footer>:The <footer> tag defines a footer for a document or section.
+
+A <footer> element typically contains:
+
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+You can have several <footer> elements in one document.
+
+
+
+
+<nav>:The <nav> tag defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only 
+for major blocks of navigation links.
+
+
+<aside>:The <aside> tag defines some content aside from the content it is placed in.
+
+The aside content should be indirectly related to the surrounding content.
+
+Tip: The <aside> content is often placed as a sidebar in a document.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+he carries river ganga on his head
+fire on his forehead
+posion in his throat
+the nature carries the entire world in its womb 
+and you mess with it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */

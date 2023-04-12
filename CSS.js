@@ -98,7 +98,7 @@ Every element and every attribute in SVG files can be animated
 Advantages of using SVG over other image formats (like JPEG and GIF) are:
 
 SVG images can be created and edited with any text editor
-SVG images can be searched, indexed, scripted, and compressed
+
 SVG images are scalable
 SVG images can be printed with high quality at any resolution
 SVG images are zoomable
