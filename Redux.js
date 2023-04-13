@@ -238,4 +238,122 @@ To understand that, to update the state of your application (like you do with se
 
 
 
+
+
+What is the difference between Context API and Redux?
+
+Requires minimal Setup
+Requires extensive setup to integrate it with a React Application
+Adding new contexts requires creation from scratch
+Easily extendible due to the ease of adding new data/actions after the initial setup
+Debugging can be hard in highly nested React Component Structure even with Dev Tool
+Incredibly powerful Redux Dev Tools to ease debugging
+UI logic and State Management Logic are in the same component
+Better code organization with separate UI logic and State Management Logic
+
+
+
+What are redux thunks? 
+Redux Thunk is a middleware that lets you call action creators that return a function instead of an 
+action object.
+This allows for delayed actions, including working with promises. One of the main use cases for this
+ middleware is for handling actions that might not be synchronous, for example, using axios to send a 
+ GET request.
+
+
+
+
+
+
+What Is Redux Middleware? Redux Middleware allows you to intercept every action sent to the reducer so you 
+can make changes to the action or cancel the action. Middleware helps you with logging, error reporting, 
+making asynchronous requests, and a whole lot more.
+
+
+
+What is useSelector? 
+
+it is hook  useSelector() ​ Allows you to extract data from the Redux store state, using a selector function
+
+It takes in a function argument that returns the part of the state that you want.
+
+
+What is the compareFn that you pass in a useSelector?
+
+The useSelector hook takes a selector function to select data from the store and another function equalityFn 
+to compare them before returning the results and determine when to render if the data from the previous and 
+current state are different
+
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider, useSelector, useDispatch, shallowEqual } from "react-redux";
+import { createStore } from "redux";
+function count(state = 0, action) {
+  switch (action.type) {
+    case "INCREMENT":
+      return state + 1;
+    case "DECREMENT":
+      return state - 1;
+    default:
+      return state;
+  }
+}
+const store = createStore(count);
+function App() {
+  const count = useSelector(state => state, shallowEqual);
+  const dispatch = useDispatch();
+  return (
+    <div className="App">
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrement</button>
+      <p>{count}</p>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement
+);
+
+
+
+
+What is useDispatch? 
+
+
+usedipatch is an redux hook which we use to send an action to reducer or we can send function
+which will return action to reducer
+
+
+what is the use of provider in react-redux
+
+The <Provider> component makes the Redux store available to any nested components that need to access the 
+Redux store
+
+
+
+
+
+what is redux tool kit? How does it make redux better?
+
+
+Redux Toolkit is our official, opinionated, batteries-included toolset for efficient Redux development. 
+It is intended to be the standard way to write Redux logic, and we strongly recommend that you use it.
+Redux Toolkit makes it easier to write good Redux applications and speeds up development, by baking in our
+
+recommended best practices, providing good default behaviors, catching mistakes, and allowing you to write
+ simpler code. Redux Toolkit is beneficial to all Redux users regardless of skill level or experience.
+
+
+
+
+
+
+
+
+
+
 */
