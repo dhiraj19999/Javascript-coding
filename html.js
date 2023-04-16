@@ -26,8 +26,8 @@ HTML with new values such as email, month, number, range,
 
 localStorage
 SessionStorage
-localStorage: It is used to store data on the client-side. I
-t has no expiration time, so the data in the LocalStorage exists always till the user manually deletes it.
+localStorage: It is used to store data on the client-side. 
+it has no expiration time, so the data in the LocalStorage exists always till the user manually deletes it.
 
 Syntax:
 
@@ -286,6 +286,8 @@ References
 https://html.spec.whatwg.org/multipage/syntax.html#the-doctype
 https://html.spec.whatwg.org/multipage/xhtml.html
 https://quirks.spec.whatwg.org/
+
+
 How do you serve a page with content in multiple languages?
 I will assume that it is asking about the most common case, which is how to serve a page with content
  available in multiple languages, but the content within the page should be displayed only in one consistent 
@@ -307,6 +309,8 @@ In the back end, the HTML markup will contain i18n placeholders and content for 
 References
 https://www.w3.org/International/getting-started/language
 https://support.google.com/webmasters/answer/189077
+
+
 What kind of things must you be wary of when designing or developing for multilingual sites?
 Use lang attribute in your HTML.
 Directing users to their native language - Allow a user to change his country/language easily without hassle.
@@ -363,6 +367,9 @@ Device access - Allowing for the usage of various input and output devices.
 Styling - Letting authors write more sophisticated themes.
 References
 https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+
 Describe the difference between a cookie, sessionStorage and localStorage.
 All the above-mentioned technologies are key-value storage mechanisms on the client side. They are only 
 able to store values as strings.
@@ -399,6 +406,8 @@ References
 http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html
 https://stackoverflow.com/questions/10808109/script-tag-async-defer
 https://bitsofco.de/async-vs-defer/
+
+
 Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before 
 </body>? Do you know any exceptions?
 Placing <link>s in the <head>
@@ -441,6 +450,8 @@ References
 https://developer.yahoo.com/performance/rules.html#css_top
 https://www.techrepublic.com/blog/web-designer/how-to-prevent-flash-of-unstyled-content-on-your-websites/
 https://developers.google.com/web/fundamentals/performance/critical-rendering-path/
+
+
 What is progressive rendering?
 Progressive rendering is the name given to techniques used to improve the performance of a webpage
  (in particular, improve perceived load time) to render content for display as quickly as possible.

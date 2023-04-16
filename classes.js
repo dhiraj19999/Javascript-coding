@@ -2,7 +2,7 @@
 Classes are syntactical sugar over the existing object oriented model in JavaScript. This means that it does 
 not introduced any new features but improves upon old features.
 
-They are similar to function constructors that you have already studied but give you much more functionality
+They are similar to function constructors  but give you much more functionality
  with less code.
 
 

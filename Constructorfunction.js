@@ -101,7 +101,7 @@ const kitchen = {
   
   //kitchen.cookFood('maggie');
   
-  // kitchen.cookFood.call(l, 'maggie', 1, 2);
+  // kitchen.cookFood.call(bedroom, 'maggie', 1, 2);
   
   //kitchen.cookFood.apply(lr, ['maggie', 1, 2]);
   

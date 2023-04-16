@@ -91,7 +91,7 @@ Flexbox is a one-dimensional layout system that we can use to create a row or a 
 
 
 what is svg?
-SVG stands for Scalable Vector Graphics. SVG is used to define vector-based graphics for the Web.
+
 SVG is a vector graphic format that can be scaled to any size without losing quality
 Every element and every attribute in SVG files can be animated
 
@@ -289,7 +289,7 @@ https://www.educative.io/answers/how-to-implement-infinite-scrolling-in-javascri
 
 
 How to add comments on css?
-To comment in CSS, simply place your plain text inside (`\* */`) marks. This tells the browser that 
+To comment in CSS, simply place your plain text inside (`\* */` marks. This tells the browser that 
 they are notes and should not be rendered on the front end.
 
 

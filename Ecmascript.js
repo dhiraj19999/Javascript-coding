@@ -70,39 +70,6 @@ console.log(newdata)// gives new arr like[2,4,6,8,10]
 
 
 
-//  */ =>  CLASS */
-
-/* JavaScript class is a special type of function. And the typeof operator returns 
-function for a class.     
-
-Classes are a template for creating objects. They encapsulate data with code to work on 
-that data. Classes in JS are built on prototypes but also have some syntax and semantics
- that are not shared with ES5 class-like semantics.
-
-
-
-
-
-
-*/
-
-
-class fruites{
-
-name='orange'
-
-constructor(){
-    console.log(this.name)// use this 
-}
-
-getfruites(item){
-   return item
-}
-
-}
-let f1=new fruites;
-console.log(f1.getfruites('apple'))
-console.log(f1.name)
 
 
 
@@ -115,60 +82,6 @@ console.log(f1.name)
 
 
 
-
-
-// /* => Inharitence<=  // 
-
-/*        
-Inheritance enables you to define a class that takes all the functionality from a parent 
-class and allows you to add more. Using class inheritance, a class can inherit all the 
-methods and properties of another class. Inheritance is a useful feature that allows code
- reusability.
-*/
-
-
-class catgory{
-
-    dryfruit(){
-        return 'Almond is dry fruit'
-    }
-
-
-    pomefruit(){
-        return 'Apple is pomefruit'
-    }
-}
-
-
-class fruit extends catgory{
-
-    constructor(){
-        super() // we use super for calling parent class constructor.
-
-        console.log('constructor')
-
-
-    }
-
-    getfruites(){
-        return 'you get apple'
-    }
-}
-let f2=new fruit
-let c1=new catgory
-
-console.log(f2.dryfruit());// here we can access function from another class.
-// we cannot access fruit properties in catgory class.
-/*   
-A constructor is a special function that creates and initializes an object instance of a 
-class. In JavaScript, a constructor gets called when an object is created using the new 
-keyword. The purpose of a constructor is to create a new object and set values for any 
-existing object propertie
-
-
-
-
-*/
 
 
 
