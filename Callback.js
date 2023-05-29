@@ -80,13 +80,13 @@ setTimeout(function(){   // SETtimeout is also callback function because it is i
 
 console.log("student enrolled");
 
-callback();
+
 
 //callback();
 },3000)
 
 
-
+callback();
 }
 
 function getstudent(){

@@ -2,7 +2,7 @@
 
 What is the constructor function?
 
-n simple words constructor function is used to create custom objects.
+In simple words constructor function is used to create custom objects.
 
 It is similar to creating any other function in JavaScript: it can have parameters, has a name, 
 and is declared with the function keyword.
@@ -11,8 +11,7 @@ We can set properties to our custom object by defining them on this, which will 
 object that is created
 
 ust remember constructor function is just a function. We know that in a function we need to return something, 
-but here we are not returning anything. So what's happening here? To understand this, let's look at how we
- create  an instance of our example( creating a car object).
+but here we are not returning anything. 
 
 In order to create a object( car object) is like calling a normal function, but in constructor function
  we use the new keyword before the function name.

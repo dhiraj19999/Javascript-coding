@@ -12,12 +12,12 @@
 
 what is synchronous programming
 line by line execution of code
-reality of each programming language
+
 Js can do only one task at a time.
 
 non-blocking behavior is called asynchronous
 
-do we have any tools to help achieve such behavior
+
 
 We want Js to carry on without waiting for a code to get executed
 
@@ -27,7 +27,8 @@ Js is single-threaded so we need a partner, browser.
 
 
 setTimeout, clearTimeout, edge cases
-We will be talking about new functions in Js like setTimeout, setInterval which allows us to execute code after a particular duration of time.
+We will be talking about new functions in Js like setTimeout, setInterval which allows us to execute code 
+after a particular duration of time.
 
 setTimeout( function(){
     ...
@@ -179,9 +180,7 @@ let result = await promise;
 //As we can see from the example above, the code looks very simple compared to 
 //the code using plain promises, with chaining and callback functions.
 //Error handling is simpler in async functions.
-//So, in this tutorial, we have learned about async and await keywords. 
-//Async/await provides a nice, simplified way to write async code that is easy to
-// read and maintain. 
+// 
 
 
 //An async function is a function that is declared with the asynckeyword. 

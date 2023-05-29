@@ -7,7 +7,7 @@ It doesn't care about variable values. All it wants to know what variables are p
 
 Execution Context
 Execution context (EC) is defined as the environment in which the JavaScript code is executed. By 
-environment, I mean what variables JavaScript code has access to at a particular time.
+environment mean, what variables JavaScript code has access to at a particular time.
 
 Execution context changes when Js starts running a function, that context is called Functional 
 Execution Context. Otherwise, its Global Execution Context by default.
@@ -18,7 +18,7 @@ is a stack with a LIFO (Last in, First out) structure, which is used to store al
  execution context created during the code execution.
 
 When the JavaScript engine first encounters your script, it creates a global execution
- context and pushes it to the current execution stack.
+ context and pushes it to the  execution stack.
 
 Whenever the engine finds a function invocation, it creates a new execution context for
  that function and pushes it to the top of the stack.

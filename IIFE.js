@@ -9,7 +9,7 @@ An IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
  is defined.
 
 Do not create unnecessary global variables and functions. Functions and variables defined in IIFE do not 
-conflict with other functions & variables even if they have same name. Organize JavaScript code.
+conflict with other functions & variables even if they have same name. 
 Developers primarily use this pattern to ensure variables are only accessible within the scope of the defined 
 function.
 (function() {

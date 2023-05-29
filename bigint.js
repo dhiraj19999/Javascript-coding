@@ -1,7 +1,6 @@
 /*
 
-JavaScript BigInt variables are used to store big integer values that are too big to be represented by a 
-normal JavaScript Number
+
 The bigint data type is intended for use when integer values might exceed the range that is supported by 
 the int data type.
 

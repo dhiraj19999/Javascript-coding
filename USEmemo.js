@@ -35,7 +35,7 @@ function Incrementtwo(){
 
 const iseven=useMemo(()=>{
     return counterone%2===0
-},[counterone])
+},[countertwo])
 
     
 /*

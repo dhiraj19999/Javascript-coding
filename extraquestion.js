@@ -47,7 +47,7 @@ what is event propagation
 
 
 Propagation refers to how events travel through the Document Object Model (DOM) tree. 
-The DOM tree is the structure which contains parent/child/sibling elements in relation to each other. 
+
 You can think of propagation as electricity running through a wire, until it reaches its destination.
 
 What is Event Bubbling? Event Bubbling is a concept in the DOM (Document Object Model). It happens when an 

@@ -103,8 +103,7 @@ SVG images are scalable
 SVG images can be printed with high quality at any resolution
 SVG images are zoomable
 SVG graphics do NOT lose any quality if they are zoomed or resized
-SVG is an open standard
-SVG files are pure XML
+
 
 
 
@@ -178,6 +177,11 @@ height: 500px;
 
 
 
+
+
+
+
+
 What is the difference between min-width and max-width in media queries?
 
 The min-width and max-width are media features
@@ -222,6 +226,32 @@ You should consider using flexbox when:
 You have a small design to work with a few rows and columns
 You need to align the element
 You don’t know how your content will look on the page, and you want everything to fit in.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DAY2  <======>
+
+
+
+
+
+
+
+
 
 
 
@@ -354,6 +384,20 @@ The translate() method moves an element from its current position (according to 
 Take a look at this example for better understanding.
 
 https://codepen.io/abdul-from-masai/pen/zYpRJaE
+
+
+
+
+
+
+
+
+
+
+======>   DAY3  <============>
+
+
+
 
 
 
@@ -595,51 +639,7 @@ align-self
 
 
 
-What is the difference between flex and grids?
 
-Grid is made for two-dimensional layout while Flexbox is for one. This means Flexbox can work on either row 
-or columns at a time, but Grids can work on both.
-
-Major Uniqueness between Flexbox and Grids is that the former works on content while the latter is based on
- the layout.
-
-CSS Grids helps you create the outer layout of the webpage. You can build complex as well responsive design 
-with this. This is why it is called ‘layout first’. Flexbox mostly helps align content & move blocks.
-
-Give an example where we have to use grids and where you have to use flexbox?
-CSS Grids helps you create the outer layout of the webpage. You can build complex as well responsive design
- with this. This is why it is called ‘layout first’. While flexbox mostly helps align content & move blocks.
-
-CSS grids are for 2D layouts. It works with both rows and columns.Flexbox works better in one dimension only
- (either rows OR columns).
-
-You should consider flexbox when :
-
-You have a small design to implement
-You need to align elements
-You need a content-first design
-You should consider CSS grid when :
-
-You have a complex design to implement
-You need to have a gap between block elements
-You need to overlap elements
-You need a layout-first design
-In simple terms
-"CSS grid is for layout, Flexbox is for alignment"
-
-Give an example where you cannot use flexbox, and you can only use grids?
-Grid is usually used to make a more complex layout. You can build complex as well responsive design with 
-this. It works with both rows and columns.Flexbox works better in one dimension only (either rows OR columns)
-.
-
-Now take a look at this example;
-
-https://codepen.io/abdul-from-masai/pen/KKZQYgw
-
-If you have some complex layout as this wherein you want to layout in different ways basis the screen size; 
-You'd rather use CSS grid over flex;
-
-for a simple one dimensional layout flexbox can be useful to help align content
 
 
 
@@ -716,6 +716,25 @@ The descendant combinator typically represented by a single space ( ) character 
 
 selector1 selector2 { style properties }
 Ref : https://codepen.io/nrupuld/pen/Oezaed
+
+
+
+
+
+
+
+
+
+=======>   DAY4  <========>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -877,6 +896,28 @@ li:nth-of-type(even){
 
 
 
+
+
+
+
+
+
+========>  DAY5 <=======>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 What is the ranking of selectors with respect to specificity
 
 Ranking from Low To High
@@ -1026,6 +1067,22 @@ example : https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relat
  
  
  
+
+
+
+
+<================>     DAY6 >========
+   
+
+
+
+
+
+
+
+
+
+
  
  
  
@@ -1176,6 +1233,19 @@ example : https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relat
  https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Syntax
  
  
+
+
+
+
+
+
+<=======>   DAY7    =======>
+   
+
+
+
+
+
  
  What are some of the "gotchas" for writing efficient CSS?
  Firstly, understand that browsers match selectors from rightmost (key selector) to left. 
@@ -1380,6 +1450,22 @@ example : https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relat
  
  References
  https://philipwalton.github.io/solved-by-flexbox/
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ <========>    DAY8   >=======
+ 
+ 
+ 
+ 
+ 
+ 
  Can you explain the difference between coding a website to be responsive versus using a mobile-first 
  strategy?
  Note that these two 2 approaches are not exclusive.

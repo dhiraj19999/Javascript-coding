@@ -66,9 +66,11 @@ and then run some code whenever that action happens
 
 
 
+
 what is onload event?
 
-The onload event occurs when an object has been loaded. onload is most often used within the <body>
+The onload event occurs when an object has been loaded. onload is most often used within 
+the <body>
  element to execute a script once a web page has completely loaded all content (including images, 
   script 
     files, CSS files, etc.).
@@ -78,8 +80,7 @@ The onload event occurs when an object has been loaded. onload is most often use
 
 
 What is scroll event?
-The scroll event fires when the document view has been scrolled. To detect when scrolling has completed, 
-see the Document: scrollend event .
+The scroll event fires when the document view has been scrolled. T
     <div onscroll="myFunction()">
 
 
@@ -145,50 +146,14 @@ if (navigator.onLine) {
 
 
 
-How do you use Geo Location API?
-
-The Geolocation API allows the user to provide their location to web applications if they so desire.
- For privacy reasons, the user is asked for permission to report location information.
-
-The Geolocation API is accessed via a call to navigator.geolocation; this will cause the user's browser
- to ask them for permission to access their location data. If they accept, then the browser will use 
- the 
- best available functionality on the device to access this information (for example, GPS).
-
- <button id="find-me">Show my location</button><br />
-<p id="status"></p>
-<a id="map-link" target="_blank"></a>
 
 
-function geoFindMe() {
-  const status = document.querySelector("#status");
-  const mapLink = document.querySelector("#map-link");
+  <=========   DAY2   ========>
 
-  mapLink.href = "";
-  mapLink.textContent = "";
 
-  function success(position) {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
 
-    status.textContent = "";
-    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-  }
 
-  function error() {
-    status.textContent = "Unable to retrieve your location";
-  }
 
-  if (!navigator.geolocation) {
-    status.textContent = "Geolocation is not supported by your browser";
-  } else {
-    status.textContent = "Locating…";
-    navigator.geolocation.getCurrentPosition(success, error);
-  }
-}
-
-document.querySelector("#find-me").addEventListener("click", geoFindMe);
 
 
 
@@ -337,6 +302,8 @@ Useful-to-have - include the locale in the path (e.g en_US, zh_CN, etc).
 References
 https://www.quora.com/What-kind-of-things-one-should-be-wary-of-when-designing-or-developing-for
 -multilingual-sites
+
+
 What are data- attributes good for?
 Before JavaScript frameworks became popular, front end developers used data- attributes to store extra data 
 within the DOM itself, without other hacks such as non-standard attributes, extra properties on the DOM. 
@@ -355,6 +322,9 @@ such as Selenium and Capybara without having to create a meaningless classes or 
 References
 http://html5doctor.com/html5-custom-data-attributes/
 https://www.w3.org/TR/html5/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes
+
+
+
 Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 Semantics - Allowing you to describe more precisely what your content is.
 Connectivity - Allowing you to communicate with the server in new and innovative ways.
@@ -367,6 +337,21 @@ Device access - Allowing for the usage of various input and output devices.
 Styling - Letting authors write more sophisticated themes.
 References
 https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+
+
+
+
+
+
+========>  DAY3  <=========
+
+
+
+
+
+
 
 
 
@@ -511,6 +496,53 @@ Yes, Pug (formerly Jade), ERB, Slim, Handlebars, Jinja, Liquid, and EJS just to 
 
 
 
+
+
+
+How do you use Geo Location API?
+
+The Geolocation API allows the user to provide their location to web applications if they so desire.
+ For privacy reasons, the user is asked for permission to report location information.
+
+The Geolocation API is accessed via a call to navigator.geolocation; this will cause the user's browser
+ to ask them for permission to access their location data. If they accept, then the browser will use 
+ the 
+ best available functionality on the device to access this information (for example, GPS).
+
+ <button id="find-me">Show my location</button><br />
+<p id="status"></p>
+<a id="map-link" target="_blank"></a>
+
+
+function geoFindMe() {
+  const status = document.querySelector("#status");
+  const mapLink = document.querySelector("#map-link");
+
+  mapLink.href = "";
+  mapLink.textContent = "";
+
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = "";
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+  }
+
+  function error() {
+    status.textContent = "Unable to retrieve your location";
+  }
+
+  if (!navigator.geolocation) {
+    status.textContent = "Geolocation is not supported by your browser";
+  } else {
+    status.textContent = "Locating…";
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+}
+
+document.querySelector("#find-me").addEventListener("click", geoFindMe);
 
 
 

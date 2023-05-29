@@ -1,5 +1,5 @@
 /*
-
+//
 (1)  what is jsx?
 
 In JSX rather than writing React.createElement we write plane HTML inside our JS itself. 
@@ -140,7 +140,7 @@ Look at the below code to see how to create a class component:
 ```jsx
 import React from "react";
 
-class Product extends React.componet{
+class Product extends React.component{
 	render(){
 		return(
 			<div>
@@ -186,6 +186,17 @@ class Product extends React.Component{
 
 export default Product;
 ```
+
+
+
+
+
+///  DAY2//
+
+
+
+
+
 
 **super()** is used inside the **constructor function** so that your component can access all the **methods of the parent component as well.**
 

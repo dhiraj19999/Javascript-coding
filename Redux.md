@@ -2,8 +2,7 @@
 
 
 
-when an action is dispatched, or in other words, when we invoke dispatch and pass in an action object,
- the dispatch function calls our reducer and passes in the current state and the action object!
+
 
 What is Redux?
 
@@ -36,6 +35,8 @@ dispatch() is the method used to dispatch actions and trigger state changes to t
 The dispatch function accepts an object that represents the type of action we want to execute when
  it is called. Basically, it sends the type of action to the reducer function to perform its job, which, 
  of course, is updating the state.
+ when an action is dispatched, or in other words, when we invoke dispatch and pass in an action object,
+ the dispatch function calls our reducer and passes in the current state and the action object!
 
 
 what is reducer?
@@ -119,6 +120,20 @@ What happens when you pass a function into a dispatcher?
 
 when we invoke dispatch and pass in an fuction that function returns the action object and after that 
 the dispatch function calls our reducer and passes  the current state and the action object!
+
+
+
+
+
+
+
+
+
+
+
+///   DAY ===>   2  
+
+
 
 
 
