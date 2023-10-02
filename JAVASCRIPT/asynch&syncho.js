@@ -215,7 +215,7 @@ console.log("Last line of this js file")
 
 // Browser provides some funcanality to js//
 //  WHENEVER JS ENGINE ENCOUNTERS A PIECE OF CODE THAT WILL TAKE A LONG TIME 
-// TO EXCUTE, IT HAND OVER IT'S EXCUATION TO BROWSER,  BROWSER NPW TAKE CARE OF
+// TO EXCUTE, IT HAND OVER IT'S EXCUATION TO BROWSER,  BROWSER NoW TAKE CARE OF
 /// THAT TASK AND WHEN IT GET FINISHED, IT PINGS THE JS ENGIENE, THAT THE TASK IS
 // DONE that's how js  engiene and browser work together to make js capble of 
 // asynchronus programing
