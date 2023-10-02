@@ -10,7 +10,7 @@ and is declared with the function keyword.
 We can set properties to our custom object by defining them on this, which will point to the new 
 object that is created
 
-ust remember constructor function is just a function. We know that in a function we need to return something, 
+just remember constructor function is just a function. We know that in a function we need to return something, 
 but here we are not returning anything. 
 
 In order to create a object( car object) is like calling a normal function, but in constructor function

@@ -58,7 +58,7 @@ let userDetail4={
 
 function printDetails (city,country){  //  now here function is not depend on userdetail
  
-    console.log(this+city+country ) // here this points towards userDetail
+    console.log(this.name+city+country ) // here this points towards userDetail
 }
 
 printDetails.call(userDetail4,"pune","india")

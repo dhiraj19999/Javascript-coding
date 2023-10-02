@@ -35,7 +35,7 @@ dispatch() is the method used to dispatch actions and trigger state changes to t
 The dispatch function accepts an object that represents the type of action we want to execute when
  it is called. Basically, it sends the type of action to the reducer function to perform its job, which, 
  of course, is updating the state.
- when an action is dispatched, or in other words, when we invoke dispatch and pass in an action object,
+  when we invoke dispatch and pass in an action object,
  the dispatch function calls our reducer and passes in the current state and the action object!
 
 
@@ -45,7 +45,7 @@ Reducers are functions that take the current state and an action as arguments, a
 In other words, (state, action) => newState
 
 
-//
+========<      DAY 2   =======>
 
 
 What is pure function?
@@ -131,7 +131,7 @@ the dispatch function calls our reducer and passes  the current state and the ac
 
 
 
-///   DAY ===>   2  
+///   DAY ===>  3
 
 
 
@@ -265,6 +265,11 @@ Debugging can be hard in highly nested React Component Structure even with Dev T
 Incredibly powerful Redux Dev Tools to ease debugging
 UI logic and State Management Logic are in the same component
 Better code organization with separate UI logic and State Management Logic
+
+
+
+       =======<   DAY4 ========>
+
 
 
 

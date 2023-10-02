@@ -74,9 +74,9 @@ The CSS box model is essentially a box that wraps around every HTML element. It 
 
 
 Content - The content of the box, where text and images appear
-Padding - Clears an area around the content. The padding is transparent
+Padding - Clears an area around the content. 
 Border - A border that goes around the padding and content
-Margin - Clears an area outside the border. The margin is transparent
+Margin - Clears an area outside the border. 
 
 
 
@@ -107,8 +107,12 @@ SVG graphics do NOT lose any quality if they are zoomed or resized
 
 
 
+=====>   DAY 2 =======<
+
+
+
 what are animation and keyframe IN CSS
-A keyframe, also written as “key frame,” is something that defines the starting and/or ending point of any 
+ “key frame,” is something that defines the starting and/or ending point of any 
 smooth transition.
 Keyframes indicate the start and end of the animation, as well as any intermediate steps between the start 
 and end
@@ -243,7 +247,7 @@ You don’t know how your content will look on the page, and you want everything
 
 
 
-// DAY2  <======>
+
 
 
 
@@ -276,17 +280,6 @@ tag=1               T
 universal==0        U
 
 
-
-
-What does justify-content, justifyItems, justifySelf mean?
-What do AlignItems, AlignContent, and AlignSelf mean?
-
-align means vertically and justify means horizontally
-justify-items - Aligns the content inside a grid item along the row axis. justify-content - This property 
-aligns the grid along the row axis. justify-self - Aligns the content inside a grid item along the row axis.
-
-justify self override justify-items on individual items.
-The align-items property defines the default behavior for how items are laid out along the cross axis
 
 
 
@@ -397,6 +390,17 @@ https://codepen.io/abdul-from-masai/pen/zYpRJaE
 ======>   DAY3  <============>
 
 
+
+
+What does justify-content, justifyItems, justifySelf mean?
+What do AlignItems, AlignContent, and AlignSelf mean?
+
+align means vertically and justify means horizontally
+justify-items - Aligns the content inside a grid item along the row axis. justify-content - This property 
+aligns the grid along the row axis. justify-self - Aligns the content inside a grid item along the row axis.
+
+justify self override justify-items on individual items.
+The align-items property defines the default behavior for how items are laid out along the cross axis
 
 
 
@@ -639,7 +643,7 @@ align-self
 
 
 
-
+=======>   DAY4  <========>
 
 
 
@@ -725,7 +729,7 @@ Ref : https://codepen.io/nrupuld/pen/Oezaed
 
 
 
-=======>   DAY4  <========>
+
 
 
 

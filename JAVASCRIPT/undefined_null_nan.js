@@ -27,7 +27,7 @@ console.log(null===null)
 console.log(undefined==undefined)
 true
 
- true
+
 
 console.log(undefined==null)
  true

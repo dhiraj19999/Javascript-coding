@@ -24,7 +24,7 @@ So Babel will convert our above JSX code to React.createElement code and then it
 
 What is the difference between State and Props?
 
-In React, both state and props are are plain JavaScript objects  state is managed by the component itself and can be updated using the setState() function. Unlike props, state can be modified by the component and is used to manage the internal state of the component. Changes in the state trigger a re-render of the component and its children. props (short for "properties") are passed to a component by its parent component and are read-only, meaning that they cannot be modified by the component itself. props can be used to configure the behavior of a component and to pass data between components.
+In React, both state and props are are plain JavaScript objects  state is managed by the component itself and can be updated using the setState() function. Unlike props, state can be modified by the component . Changes in the state trigger a re-render of the component and its children. props (short for "properties") are passed to a component by its parent component and are read-only, meaning that they cannot be modified by the component itself. props can be used to configure the behavior of a component and to pass data between components.
 
 
 what is conditional rendring?
@@ -113,6 +113,10 @@ return (
 
 
 
+======= DAY  2  ====>
+
+
+
 What is Virtual DOM?  and how it works?
 
 The Virtual DOM (VDOM) is an in-memory representation of Real DOM. The representation of a UI is kept in 
@@ -191,7 +195,7 @@ export default Product;
 
 
 
-///  DAY2//
+
 
 
 
@@ -295,7 +299,17 @@ const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
 
 
 
+
+
+
+     =======>  DAY3 =====<
+
+
+
+
+
 what is memorization in react?
+
 memoization is an optimization technique that makes applications more efficient and  faster
 A cache is simply a temporary data store that holds data so that future requests for that data 
 can be served faster.

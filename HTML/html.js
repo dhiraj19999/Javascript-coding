@@ -58,6 +58,10 @@ The <form> element is a container for different types of input elements, such as
  we can use The <input type="submit"> defines a button for submitting the form data to a form-handler.
 
 
+
+ ===>   DAY 2 =====<
+ 
+ 
  
  What are event listeners?
 An event listener in JavaScript is a way that you can wait for user interaction like a click or keypress 
@@ -128,8 +132,8 @@ There are three supported video formats in HTML: MP4, WebM, and OGG.
 
 How do you know if a user is offline or not? What API does the browser provide for that?
 
-We can detect if the user is online or offline by using the online property on the navigator 
-object which will return true if the user is connected to the internet, otherwise it returns false .
+ By using the online property on the navigator object which will return true if the user is connected
+  to the internet, otherwise it returns false .
 
 
 o check if you are online, query window.navigator.onLine, as in the following example:
@@ -148,7 +152,7 @@ if (navigator.onLine) {
 
 
 
-  <=========   DAY2   ========>
+  
 
 
 
@@ -231,6 +235,10 @@ link for extra questions :  https://docs.google.com/document/d/1hhdCyPcDfOJ1r9FL
 
 
 
+<=========   DAY3   ========>
+
+
+
 
 What does a DOCTYPE do?
 DOCTYPE is an abbreviation for Document Type. A DOCTYPE is always associated to a DTD - for Document Type
@@ -304,6 +312,21 @@ https://www.quora.com/What-kind-of-things-one-should-be-wary-of-when-designing-o
 -multilingual-sites
 
 
+
+
+
+
+
+========>  DAY4 <=========
+
+
+
+
+
+
+
+
+
 What are data- attributes good for?
 Before JavaScript frameworks became popular, front end developers used data- attributes to store extra data 
 within the DOM itself, without other hacks such as non-standard attributes, extra properties on the DOM. 
@@ -345,7 +368,6 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
 
 
 
-========>  DAY3  <=========
 
 
 
