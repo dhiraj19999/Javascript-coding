@@ -221,7 +221,7 @@ console.log("Last line of this js file")
 // asynchronus programing
 
 
-//Message Queue// 
+//Message Queue// //
 
 //It's a one more data structure that Js to add next code to execute. 
 //Such code are called tasks, since they need more time to execute. 
